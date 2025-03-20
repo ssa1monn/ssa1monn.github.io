@@ -1,5 +1,5 @@
-import Document, { Html, Head, Main, NextScript } from "next/document"
-import { CONFIG } from "site.config"
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import { CONFIG } from "site.config";
 
 class MyDocument extends Document {
   render() {
@@ -36,14 +36,16 @@ class MyDocument extends Document {
               />
             </>
           )}
+          {/* sparkle script */}
+          <script src="/sparkle.js" async />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;
