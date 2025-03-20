@@ -12,6 +12,8 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
       <Hydrate state={pageProps.dehydratedState}>
         <RootLayout>{getLayout(<Component {...pageProps} />)}</RootLayout>
       </Hydrate>
+      {/* <AnimatedCursor /> */}
+      <Sparkle />
     </QueryClientProvider>
   )
 }
