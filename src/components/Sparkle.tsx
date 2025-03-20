@@ -19,7 +19,7 @@ function throttle <F extends (...args : any[]) => any> (
     return function (this : ThisParameterType<F>, ...args : Parameters<F>) {
         const context = this
         if (!lastRan) {
-            func.applay(context, args)
+            func.apply(context, args)
             lastRan = Date.now()
         } else {
             clearTimeout(lastFunc)
